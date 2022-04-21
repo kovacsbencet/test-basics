@@ -15,7 +15,7 @@ console.log(match)
  */
 function search(arr, word){
     const result = arr.filter(element => element.includes(word))
-    return result
+    return result.length > 5 ? result.slice(0,5) : result
 }
 
 module.exports = search
